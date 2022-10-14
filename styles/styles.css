@@ -97,6 +97,17 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+.catalog-link {
+  font-family: "raleway";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+.catalog-image, .track {
+  background-color: #FFE17F;
+}
 .features-value {
   font-size: 36px;
 }
@@ -124,8 +135,15 @@ body {
   width: 1160px;
   height: 100px;
   border: none;
-  background: none;
+  font-family: "raleway";
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #F0F0F0;
 }
+
 .about-text-list-item {
   color: #FFC700;
 }
