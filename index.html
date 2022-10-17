@@ -7,51 +7,61 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-logo" href="#">
-        <img class="header-logo" src="images/images/logo.svg" width="145" height="36" alt="Логотип магазина Девайс">
-      </a>
-        <nav class="navigation">
-          <ul class="navigation-user">
-            <li class="navigation-item">
-              <input class="navigation-search" type="text">
-              <input class="navigation-search-button" type="submit" value="Найти">
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img src="images/images/login-icon.svg" width="15" height="12" alt="Войти">
-              Войти</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img src="images/images/compare-icon.svg" width="10" height="12" alt="Сравнить">
-              Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img src="images/images/basket-icon.svg" width="16" height="14" alt="Корзина">
-              Корзина</a>
-            </li>
-          </ul>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <button class="navigation-button">КАТАЛОГ ТОВАРОВ</button>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">ДОСТАВКА</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">ГАРАНТИЯ</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">КОНТАКТЫ</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="logo">
+        <a class="page-logo" href="#">
+          <img class="header-logo" src="images/images/logo.svg" width="145" height="36" alt="Логотип магазина Девайс">
+        </a>
+      </div>
+      <div class="header-navigation-user">
+        <ul class="navigation-user">
+          <li class="navigation-item searching">
+            <input class="navigation-search" type="text">
+            <input class="navigation-search-button" type="submit" value="Найти">
+          </li>
+          <li class="navigation-item login-link">
+            <a class="navigation-link" href="#">
+              <img src="images/images/login-icon.svg" width="15" height="12" alt="Войти">
+            Войти</a>
+          </li>
+          <li class="navigation-item compare-link">
+            <a class="navigation-link" href="#">
+              <img src="images/images/compare-icon.svg" width="10" height="12" alt="Сравнить">
+            Сравнить</a>
+          </li>
+          <li class="navigation-item basket-link">
+            <a class="navigation-link" href="#">
+              <img src="images/images/basket-icon.svg" width="16" height="14" alt="Корзина">
+            Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item header-catalog">
+            <button class="navigation-button">КАТАЛОГ ТОВАРОВ</button>
+          </li>
+          <li class="navigation-item">
+            <ul class="navigation-sublist">
+              <li class="navigation-sublist-item" >
+                <a class="navigation-link" href="#">ДОСТАВКА</a>
+              </li>
+              <li class="navigation-sublist-item">
+                <a class="navigation-link" href="#">ГАРАНТИЯ</a>
+              </li>
+              <li class="navigation-sublist-item">
+                <a class="navigation-link" href="#">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="index-main">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
-      <section class="bestseller-gallery">
-        <h2 class="visually-hidden">Популярные товары</h2>
+      <section class="bestseller">
+        <div class="bestseller-slider">
+          <div class="bestseller-gallery">
+          <h2 class="visually-hidden">Популярные товары</h2>
         <img class="bestseller-slider-image" src="images/files/slider-image.png" width="560" height="560" alt="Квадрокоптер">
         <button class="slider-button slider-prev" type="button">
           <img class="slider-button-image" src="images/images/arrow-left.svg" width="20" height="60" alt="Предыдущий слайд">
@@ -61,6 +71,7 @@
           <img class="slider-button-image" src="images/images/arrow-right.svg" width="20" height="60" alt="Следующий слайд">
           <span class="visually-hidden">Следующий</span>
         </button>
+        </div>
         <div class="bestseller-slider-item">
           <p class="title">Порхает как бабочка,<br> жалит как пчела!</p>
           <p class="item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -75,6 +86,7 @@
               <td class="features-type">Радиус поражения</td>
             </tr>
           </table>
+        </div>
         </div>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -131,17 +143,20 @@
           </li>
         </ul>
         <div class="delivery">
-          <h3 class="title">Доставка</h3>
+          <div class="delivery-text">
+            <h3 class="title">Доставка</h3>
           <p class="delivery-description">Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно! Ведь<br>
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
           <img src="images/images/deliveryman.svg" width="136" height="164" alt="Доставка товара">
         </div>
       </section>
       <div class="special-request">
         <button class="special-request-button"><img class="track" src="images/images/track.svg" width="47" height="31" alt="Доставим редкий товар под заказ">Доставим редкий товар под заказ</button>
       </div>
-      <section class="about">
+      <div class="about-container">
+        <section class="about">
         <h2 class="title">О нас</h2>
         <p class="about-text">Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
         <p class="about-text">Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
@@ -168,6 +183,7 @@
         </ul>
         <a class="button" href="#">Напишите нам</a>
       </section>
+      </div>
       <section class="subscription">
         <h2 class="title">Подпишитесь<br> на рассылку</h2>
         <p class="subscription-text">Еженедельный дайджест с обзорами новинок,<br>
@@ -188,53 +204,59 @@
           <p class="footer-text">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
         </address>
       </section>
-      <section class="footer-links">
-        <h2 class="visually-hidden">Сервис магазина</h2>
-        <ul class="footer-links-list">
-          <li class="footer-links-item">
-            <a class="footer-link" href="#">ДОСТАВКА</a>
-          </li>
-          <li class="footer-links-item">
-            <a class="footer-link" href="#">ГАРАНТИЯ</a>
-          </li>
-          <li class="footer-links-item">
-            <a class="footer-link" href="#">КОНТАКТЫ</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="social-button" href="#">
-              <img class="social-logo" src="images/images/telegram-icon.svg" width="40" height="40" alt="Telegram">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="social-button" href="#">
-              <img class="social-logo" src="images/images/youtube-icon.svg" width="40" height="40" alt="Youtube">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="social-button" href="#">
-              <img class="social-logo" src="images/images/twitter-icon.svg" width="40" height="40" alt="Twitter">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-phonecall">
-        <h2 class="visually-hidden">Позвонить нам</h2>
-        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-      </section>
-      <section class="developer">
-        <h2 class="visually-hidden">Сделано в</h2>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="htmlacademy-link-logo" src="images/images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML-Академии">
-        </a>
-      </section>
+      <div class="footer-second-column">
+        <section class="footer-links">
+          <h2 class="visually-hidden">Сервис магазина</h2>
+          <ul class="footer-links-list">
+            <li class="footer-links-item">
+              <a class="footer-link" href="#">ДОСТАВКА</a>
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-link" href="#">ГАРАНТИЯ</a>
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-link" href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="social-button" href="#">
+                <img class="social-logo" src="images/images/telegram-icon.svg" width="40" height="40" alt="Telegram">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="social-button" href="#">
+                <img class="social-logo" src="images/images/youtube-icon.svg" width="40" height="40" alt="Youtube">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="social-button" href="#">
+                <img class="social-logo" src="images/images/twitter-icon.svg" width="40" height="40" alt="Twitter">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer-third-column">
+        <section class="footer-phonecall">
+          <h2 class="visually-hidden">Позвонить нам</h2>
+          <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        </section>
+        <section class="developer">
+          <h2 class="visually-hidden">Сделано в</h2>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="htmlacademy-link-logo" src="images/images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML-Академии">
+          </a>
+        </section>
+      </div>
+
     </footer>
   </body>
 </html>
