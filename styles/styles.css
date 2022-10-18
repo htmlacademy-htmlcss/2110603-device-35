@@ -145,7 +145,7 @@ body {
   margin: 0 auto;
   justify-content: space-between;
 }
-.subscription {
+.subscription-container {
   display: flex;
   width: 1440px;
   margin: 0 auto;
@@ -168,7 +168,7 @@ body {
   padding: 0;
   margin: 56px 141px;
 }
-.page-footer {
+.footer-container{
   display: flex;
   width: 1440px;
   margin: 0 auto;
@@ -217,9 +217,6 @@ body {
   height: 116px;
   justify-content: space-between;
 }
-.main-inner {
-
-}
 .inner-header {
  margin: 35px auto;
  display: flex;
@@ -234,7 +231,7 @@ body {
   width: 1040px;
   justify-content: flex-start;
 }
-.catalog-products {
+.catalog-products-container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
@@ -327,8 +324,6 @@ body {
   line-height: 21px;
   font-weight: 800;
   border: none;
-  letter-spacing: 20%;
-  text-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
 }
 .slider-button {
   border: none;

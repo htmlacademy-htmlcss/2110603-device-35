@@ -15,7 +15,7 @@
       <div class="header-navigation-user">
         <ul class="navigation-user">
           <li class="navigation-item searching">
-            <input class="navigation-search" type="text">
+            <input class="navigation-search" type="text" placeholder="Поиск по сайту">
             <input class="navigation-search-button" type="submit" value="Найти">
           </li>
           <li class="navigation-item login-link">
@@ -185,77 +185,83 @@
       </section>
       </div>
       <section class="subscription">
-        <h2 class="title">Подпишитесь<br> на рассылку</h2>
-        <p class="subscription-text">Еженедельный дайджест с обзорами новинок,<br>
-        длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="form-label" for="subscription-email"></label>
-          <input class="input" placeholder="Ваш e-mail" type="email" id="subscription-email" name="subscription-email" required="">
-          <button class="subscription-button" type="submit">Подписаться</button>
-          <span><img class="free-tick" src="images/images/tick-icon.svg" width="14" height="14" alt="Это бесплатно">Это бесплатно</span>
-        </form>
+        <div class="subscription-container">
+          <h2 class="title">Подпишитесь<br> на рассылку</h2>
+          <p class="subscription-text">Еженедельный дайджест с обзорами новинок,<br>
+          длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-label" for="subscription-email"></label>
+            <input class="input" placeholder="Ваш e-mail" type="email" id="subscription-email" name="subscription-email" required="">
+            <button class="subscription-button" type="submit">Подписаться</button>
+            <span><img class="free-tick" src="images/images/tick-icon.svg" width="14" height="14" alt="Это бесплатно">Это бесплатно</span>
+          </form>
+        </div>
+
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-logo" src="images/images/footer-logo.svg" width="145" height="36" alt="Логотип Магазина Девайс">
-        <address class="footer-address">
-          <p class="footer-text">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
-        </address>
-      </section>
-      <div class="footer-second-column">
-        <section class="footer-links">
-          <h2 class="visually-hidden">Сервис магазина</h2>
-          <ul class="footer-links-list">
-            <li class="footer-links-item">
-              <a class="footer-link" href="#">ДОСТАВКА</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-link" href="#">ГАРАНТИЯ</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-link" href="#">КОНТАКТЫ</a>
-            </li>
-          </ul>
+      <div class="footer-container">
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <img class="footer-logo" src="images/images/footer-logo.svg" width="145" height="36" alt="Логотип Магазина Девайс">
+          <address class="footer-address">
+            <p class="footer-text">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
+          </address>
         </section>
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="social-button" href="#">
-                <img class="social-logo" src="images/images/telegram-icon.svg" width="40" height="40" alt="Telegram">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="social-button" href="#">
-                <img class="social-logo" src="images/images/youtube-icon.svg" width="40" height="40" alt="Youtube">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="social-button" href="#">
-                <img class="social-logo" src="images/images/twitter-icon.svg" width="40" height="40" alt="Twitter">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <div class="footer-second-column">
+          <section class="footer-links">
+            <h2 class="visually-hidden">Сервис магазина</h2>
+            <ul class="footer-links-list">
+              <li class="footer-links-item">
+                <a class="footer-link" href="#">ДОСТАВКА</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="footer-link" href="#">ГАРАНТИЯ</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="footer-link" href="#">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="social-button" href="#">
+                  <img class="social-logo" src="images/images/telegram-icon.svg" width="40" height="40" alt="Telegram">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="social-button" href="#">
+                  <img class="social-logo" src="images/images/youtube-icon.svg" width="40" height="40" alt="Youtube">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="social-button" href="#">
+                  <img class="social-logo" src="images/images/twitter-icon.svg" width="40" height="40" alt="Twitter">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="footer-third-column">
+          <section class="footer-phonecall">
+            <h2 class="visually-hidden">Позвонить нам</h2>
+            <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </section>
+          <section class="developer">
+            <h2 class="visually-hidden">Сделано в</h2>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+              <img class="htmlacademy-link-logo" src="images/images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML-Академии">
+            </a>
+          </section>
+        </div>
       </div>
 
-      <div class="footer-third-column">
-        <section class="footer-phonecall">
-          <h2 class="visually-hidden">Позвонить нам</h2>
-          <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        </section>
-        <section class="developer">
-          <h2 class="visually-hidden">Сделано в</h2>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="htmlacademy-link-logo" src="images/images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML-Академии">
-          </a>
-        </section>
-      </div>
 
     </footer>
   </body>
