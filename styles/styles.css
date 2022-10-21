@@ -449,7 +449,14 @@ body {
   justify-content: space-between;
 }
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation ul, .header-navigation-user ul, .slider-pagination, .catalog-parts, .service-list, .footer-links-list, .footer-social-list, .contacts-schedule-item, .breadcrumbs, .filter-list, .pagination, .product-card {
