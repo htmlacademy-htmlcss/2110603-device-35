@@ -47,7 +47,6 @@ body {
   margin-left: 60px;
   margin-bottom: 30px;
 }
-
 .header-navigation-user {
   margin-bottom: 30px;
 }
@@ -62,15 +61,18 @@ body {
 }
 .searching {
   min-width: 520px;
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  grid-template-rows: 40px;
+  box-sizing: border-box;
+  margin-right: 26px;
 }
 .navigation-search {
   font-family: "rubik";
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  width: 359px;
-  height: 40px;
-  margin: 0;
+  padding-left: 48px;
   background-color: #FFE17F;
   border: 2px solid #000;
   border-radius: 50px 0 0 50px;
@@ -81,12 +83,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #FFE17F;
-  width: 160px;
-  margin: 0;
-  margin-left: -6px;
-  margin-right: 26px;
-  padding: 11px 56px;
   border: 2px solid #000;
+  border-left: 0;
   border-radius: 0 50px 50px 0;
 }
 .login-link {
@@ -123,6 +121,9 @@ body {
 }
 .bestseller-gallery {
   width: 560px;
+}
+.bestseller-slider-image {
+  object-fit: cover;
 }
 .bestseller-slider-item {
   margin-top: auto;
@@ -214,11 +215,27 @@ body {
   padding: 0;
   margin: 0;
 }
-.special-request {
-  display: flex;
-  width: 1160px;
+.special-request-button {
   margin: 70px auto;
   padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border: none;
+  font-family: "raleway";
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #F0F0F0;
+}
+.track {
+  object-fit: none;
+  background-color: #FFE17F;
 }
 .about-container {
   display: flex;
@@ -226,7 +243,6 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   margin-bottom: 70px;
-
 }
 .about {
   width: 520px;
@@ -270,6 +286,9 @@ body {
   margin-left: 0;
   margin-bottom: 18px;
 }
+.subscription {
+  background-color: #F0F0F0;
+}
 .subscription-container {
   display: flex;
   width: 1158px;
@@ -292,10 +311,28 @@ body {
 
 }
 .subscription-form {
-  width: 1158px;
   padding: 0;
   margin-top: 144px;
   margin-bottom: 56px;
+  display: grid;
+  grid-template-columns: 557px 253px 1fr;
+  width: 1158px;
+}
+.subscription-input {
+  padding-left: 16px;
+  background-color: #F0F0F0;
+  border: 0;
+  border-bottom: 3px solid #C4C4C4;
+  color: #444;
+}
+.subscription-button {
+  padding: 15px 29px;
+  border: 3px solid #C4C4C4;
+  background-color: #F0F0F0;
+}
+.subscription-span {
+  margin-left: auto;
+  padding-left: 32px;
 }
 .footer-container{
   display: flex;
@@ -422,18 +459,33 @@ body {
 }
 .product-list {
   margin: 0;
-  padding: 70px 40px 0 40px;
-  display: flex;
+  padding: 70px 40px 44px;
   width: 760px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 360px);
+  gap: 44px 40px;
 }
-.product-card {
+.product-card-link {
+  margin: 0;
+  padding: 0;
   width: 360px;
-  margin-right: 40px;
-  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
-.product-card:nth-child(2n) {
-  margin-right: 0;
+
+.product-card-image {
+  margin-bottom: 32px;
+}
+.product-card-description {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.product-card-title {
+  margin: 0;
+  padding: 0;
+  max-width: 226px;
 }
 .add-button {
   width: 760px;
@@ -489,7 +541,7 @@ body {
   border: none;
   background: none;
 }
-.bestseller-slider-item .title, .delivery .title, .about .title, .contacts .title, .subscription .title, .inner-header-title {
+.title {
   font-family: "raleway";
   font-size: 50px;
   line-height: 50px;
@@ -498,7 +550,7 @@ body {
 .bestseller-slider-item .item-description, .delivery-description, .about-text, .contacts-text, .contacts-schedule-item, .contacts-phone, .subscription-text, .subscription-form span {
   color: #444;
 }
-.bestseller-slider-item .button, .service-item .button, .about .button, .contacts .button, .subscription-button, .catalog-filter .button, .pagination-link {
+.button {
   font-family: "raleway";
   font-size: 18px;
   line-height: 21px;
@@ -515,7 +567,8 @@ body {
   color: #000;
   text-decoration: none;
 }
-.catalog-image, .track {
+.catalog-image {
+  object-fit: cover;
   background-color: #FFE17F;
 }
 .features-value {
@@ -543,19 +596,7 @@ body {
   color: #FFE17F;
   background-color: #000;
 }
-.special-request-button {
-  margin: 70px auto;
-  width: 1160px;
-  height: 100px;
-  border: none;
-  font-family: "raleway";
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 800;
-  color: #000;
-  text-transform: uppercase;
-  background-color: #F0F0F0;
-}
+
 .contacts-address {
   color: #444;
   font-style: normal;
@@ -564,22 +605,6 @@ body {
   color: #444;
   font-weight: 700;
   font-size: 24px;
-}
-.subscription {
-  background-color: #F0F0F0;
-}
-.subscription-form .input {
-  width: 557px;
-  height: 55px;
-  background-color: #F0F0F0;
-  border: 2px solid #C4C4C4;
-  color: #444;
-}
-.subscription-button {
-  width: 253px;
-  height: 57px;
-  background-color: #F0F0F0;
-  border: 2px solid #C4C4C4;
 }
 .page-footer, .footer-phone {
   color: #fff;
