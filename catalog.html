@@ -155,11 +155,38 @@
                 <option value="cheap">Дешёвые</option>
                 <option value="expensive">Дорогие</option>
               </select>
-              <div></div>
+              <div class="sort">
+                <button class="low-high">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_97_678)">
+                    <path d="M15 10L20.5 20H9.5" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_97_678">
+                    <rect width="11" height="10" fill="white" transform="translate(9.5 10)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
+                <button class="low-high">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_97_681)">
+                  <path d="M15 20L9.5 10L20.5 10" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_97_681">
+                  <rect width="11" height="10" fill="white" transform="translate(20.5 20) rotate(180)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                </button>
+
+
+              </div>
             </div>
             <ul class="product-list">
               <li class="product-card">
-                <a class="product-card-link" href="#">
+                <a class="product-card-link new" href="#">
                   <img class="product-card-image" src="images/files/product1.jpg" width="360" height="380"
                     alt="Любительская селфи-палка">
                   <div class="product-card-description">
@@ -203,24 +230,31 @@
             <button class="add-button" type="button">Загрузить ещЁ</button>
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="button pagination-link pagination-prev pagination-disabled">
+                <a class="pagination-link pagination-prev pagination-disabled">
                   Назад
                 </a>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-link pagination-current">1</a>
+                <ul class="pagination-numbers">
+                  <li class="pagination-number">
+                    <a class="pagination-link pagination-current">1</a>
+                  </li>
+                  <li class="pagination-number">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-number">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-number">
+                    ...
+                  </li>
+                  <li class="pagination-number">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                </ul>
               </li>
               <li class="pagination-item">
-                <a class="button pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">15</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link pagination-next" href="#">
+                <a class="pagination-link pagination-next" href="#">
                   Вперёд
                 </a>
               </li>
