@@ -15,10 +15,10 @@
       <div class="header-user">
         <ul class="header-user-list">
           <li class="user-list-item">
-            <div class="searching">
+            <form class="searching">
               <input class="header-search" type="text" placeholder="Поиск по сайту">
               <input class="header-search-button" type="submit" value="Найти">
-            </div>
+            </form>
 
           </li>
           <li class="user-list-item">
@@ -47,6 +47,14 @@
                 <path fill="#fff" d="M17 17.79h16v16H17z"/></clipPath></defs>
               </svg>
             </button>
+            <ul class="navigation-subcatalog">
+              <li><a href="">Виртуальная реальность</a></li>
+              <li><a href="">Моноподы для селфи</a></li>
+              <li><a href="">Экшн-камеры</a></li>
+              <li><a href=""></a>Фитнес-браслеты</li>
+              <li><a href=""></a>Умные часы</li>
+              <li><a href=""></a>Квадрокоптеры</li>
+            </ul>
           </li>
           <li class="navigation-item">
             <ul class="navigation-sublist">
@@ -67,10 +75,11 @@
     <main class="index-main">
       <h1 class="visually-hidden">Интернет-магазин Device.</h1>
       <section class="bestseller">
-        <div class="bestseller-slider">
+<!-- Слайдер №1, для скрытия слайдера заменить класс "bestseller-slider-current" на "bestseller-slider-disabled"  -->
+        <div class="bestseller-slider-current bestseller-slider bestseller-slider-1">
           <div class="bestseller-gallery">
             <h2 class="visually-hidden">Популярные товары.</h2>
-            <img class="bestseller-slider-image" src="images/files/slider-image.png" width="560" height="560" alt="Квадрокоптер.">
+            <img class="bestseller-slider-image" src="images/files/slider-image1.png" width="560" height="560" alt="Квадрокоптер.">
             <div class="slider-control">
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущий.</span>
@@ -95,7 +104,6 @@
               </tr>
             </table>
           </div>
-
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -113,6 +121,104 @@
               </button>
             </li>
           </ol>
+        </div>
+<!-- Слайдер №2, для отображения заменить класс "bestseller-slider-disabled" на "bestseller-slider-current"  -->
+        <div class="bestseller-slider-disabled bestseller-slider bestseller-slider-2">
+          <div class="bestseller-gallery">
+            <h2 class="visually-hidden">Популярные товары.</h2>
+            <img class="bestseller-slider-image" src="images/files/slider-image2.png" width="560" height="560" alt="Фитнес-браслет.">
+            <div class="slider-control">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущий.</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующий.</span>
+              </button>
+            </div>
+          </div>
+          <div class="bestseller-slider-item">
+            <p class="title">Худеем<br>
+              правильно!</p>
+            <p class="item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button" href="#">Подробнее</a>
+            <table class="features">
+              <tr class="features-list">
+                <th class="features-value">48 часов</th>
+              </tr>
+              <tr class="features-list">
+                <td class="features-type">Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">Квадрокоптер</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">фитнес-браслет</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">Монопод для селфи</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+<!-- Слайдер №3, для отображения заменить класс "bestseller-slider-disabled" на "bestseller-slider-current"  -->
+        <div class="bestseller-slider-disabled bestseller-slider bestseller-slider-3">
+            <div class="bestseller-gallery">
+              <h2 class="visually-hidden">Популярные товары.</h2>
+              <img class="bestseller-slider-image" src="images/files/slider-image3.png" width="560" height="560" alt="Селфи-палка.">
+              <div class="slider-control">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущий.</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующий.</span>
+                </button>
+              </div>
+            </div>
+            <div class="bestseller-slider-item">
+              <p class="title">Делай селфи,<br>
+                 как Бен Стиллер!</p>
+              <p class="item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </p>
+              <a class="button" href="#">Подробнее</a>
+              <table class="features">
+                <tr class="features-list">
+                  <th class="features-value">8,5 м</th>
+                  <th class="features-value">5 кг</th>
+                  <th class="features-value">Карбон</th>
+                </tr>
+                <tr class="features-list">
+                  <td class="features-type">Длина палки</td>
+                  <td class="features-type">Вес палки</td>
+                  <td class="features-type">Материал</td>
+                </tr>
+              </table>
+            </div>
+
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">Квадрокоптер</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">фитнес-браслет</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">Монопод для селфи</span>
+                </button>
+              </li>
+            </ol>
         </div>
       </section>
       <section class="catalog-sections">
@@ -161,6 +267,7 @@
           <h2 class="visually-hidden">Сервис магазина</h2>
           <ul class="service-list">
             <li class="service-item">
+
               <button class="button service-button service-button-current" type="button">Доставка</button>
             </li>
             <li class="service-item">
@@ -170,17 +277,41 @@
               <button class="button service-button" type="button">Кредит</button>
             </li>
           </ul>
-          <div class="delivery">
-            <div class="delivery-text">
+<!-- Доставка. Для переключения заменить класс "service-item-current" на "service-item-disabled" -->
+          <div class="service-item-current">
+            <div class="service-item-text delivery-text">
               <h3 class="title">Доставка</h3>
-              <p class="delivery-description">Мы с удовольствием доставим ваш товар прямо<br>
-          к вашему подъезду совершенно бесплатно! Ведь<br>
+              <p class="service-item-description delivery-description">Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <img src="images/images/deliveryman.svg" width="136" height="164" alt="Доставка товара.">
+
+            <img src="images/images/delivery-image.svg" width="136" height="164" alt="Доставим товар на любой этаж.">
+          </div>
+<!-- Гарантия. Для переключения заменить класс "service-item-disabled" на "service-item-current" -->
+          <div class="service-item-disabled">
+            <div class="service-item-text warranty-text">
+              <h3 class="title">Гарантия</h3>
+              <p class="service-item-description warranty-description">Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+              </p>
+            </div>
+
+            <img src="images/images/warranty-image.svg" width="171" height="195" alt="Гарантия качества товара.">
+          </div>
+<!-- Кредит. Для переключения заменить класс "service-item-disabled" на "service-item-current"  -->
+          <div class="service-item-disabled">
+            <div class="service-item-text credit-text">
+              <h3 class="title">Кредит</h3>
+              <p class="service-item-description credit-description">Залезть в долговую яму стало проще!
+       Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+              </p>
+            </div>
+
+            <img src="images/images/credit-image.svg" width="156" height="188" alt="Товары можно купить в кредит.">
           </div>
         </div>
-
       </section>
       <div class="special-request">
         <button class="special-request-button">
@@ -281,7 +412,7 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="social-button" href="#">
+                <a class="social-button" href="https://t.me/htmlacademy">
                   <svg class="social-icon" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <g clip-path="url(#clip0_1_1373)">
@@ -297,7 +428,7 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="social-button" href="#">
+                <a class="social-button" href="https://www.youtube.com/user/htmlacademyru">
                   <svg class="social-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <g clip-path="url(#clip0_1_1378)">
@@ -313,7 +444,7 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="social-button" href="#">
+                <a class="social-button" href="https://twitter.com/htmlacademy_ru">
                   <svg class="social-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
@@ -340,8 +471,61 @@
           </section>
         </div>
       </div>
-
-
     </footer>
+<!--Для открытия модального окна с формой доставки редкого товара убрать класс "modal-container-close" -->
+    <div class="modal-container modal-container-close">
+      <div class="modal-special-request">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть модальное окно.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-field">
+              <legend class="visually-hidden">Контактные данные:</legend>
+              <label class="modal-form-label">
+                <span class="modal-form-subtitle">Ваше имя:</span>
+                <input class="modal-input modal-input-name" type="text" name="name" placeholder="Введите имя">
+              </label>
+              <label class="modal-form-label email-label">
+                <span class="modal-form-subtitle">Ваш e-mail:</span>
+                <input class="modal-input  modal-input-email" type="email" name="email" placeholder="Введите e-mail">
+                <span class="modal-note">Забавный у вас адрес</span>
+              </label>
+            </fieldset>
+            <fieldset class="modal-field">
+              <legend class="visually-hidden">Данные заказа:</legend>
+              <label class="modal-form-label">
+                <span class="modal-form-subtitle">Что нужно привезти:</span>
+                <input class="modal-input  modal-input-items" type="text" name="request-items" placeholder="В свободной форме">
+              </label>
+              <div class="modal-form-label">
+                <label class ="modal-form-label label-quantity" for="input-quantity">
+                  <span class="modal-form-subtitle tooltip-relative">Количество:
+                    <span class="tooltip">
+                      <button class="tooltip-button" aria-labelledby="tooltip-label-quantity" type="button"></button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-quantity">
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+к провозу багажа.
+                      </span>
+                    </span>
+                  </span>
+                </label>
+                  <div class="minus-input-plus">
+                    <button class="modal-button button-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество.</span>
+                    </button>
+                    <input class="modal-input  modal-input-quantity" type="number" id="input-quantity" name="quantity" min="1" value="1">
+                    <button class="modal-button button-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество.</span>
+                    </button>
+                  </div>
+              </div>
+            </fieldset>
+            <button class="button modal-submit-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

@@ -85,48 +85,66 @@
         <div class="catalog-products-container">
           <h2 class="visually-hidden">Список моноподов с фильтрами</h2>
           <div class="left-column">
-            <h3 class="filter-title">ФИЛЬТР:</h3>
+            <h3 class="column-subtitle">ФИЛЬТР:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-group">
                 <legend class="filter-title">Стоимость</legend>
-                <input type="range">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px;">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                      <label class="range-label range-label-min">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="range-label range-label-max">
+                      до <input class="range-input " type="number" value="5000" name="max-price">
+                    </label>
+                    </div>
+                  </div>
+                </div>
+
               </fieldset>
               <fieldset class="filter-group">
                 <legend class="filter-title">Цвет</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="black" checked>
-
-                      Черный
+                      <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-name">Черный</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="white" checked>
-
-                      Белый
+                      <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-name">Белый</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="blue">
-
-                      Синий
+                      <input class="visually-hidden control-input" type="checkbox" name="blue">
+                      <span class="control-mark"></span>
+                      <span class="control-name">Синий</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="red">
-
-                      Красный
+                      <input class="visually-hidden control-input" type="checkbox" name="red">
+                      <span class="control-mark"></span>
+                      <span class="control-name">Красный</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="pink">
-
-                      Розовый
+                      <input class="visually-hidden control-input" type="checkbox" name="pink">
+                      <span class="control-mark"></span>
+                      <span class="control-name">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -135,12 +153,18 @@
                 <legend class="filter-title">Bluetooth</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input type="radio" name="yesornot" value="yes" checked>
-                    Есть
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="yesornot" value="yes" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-name">Есть</span>
+                    </label>
                   </li>
                   <li class="filter-item">
-                    <input type="radio" name="yesornot" value="no">
-                    Нет
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="yesornot" value="no">
+                      <span class="control-mark"></span>
+                      <span class="control-name">Нет</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -149,14 +173,14 @@
           </div>
           <div class="right-column">
             <div class="sorting">
-              <h3 class="filter-title">СОРТИРОВКА:</h3>
+              <h3 class="column-subtitle">СОРТИРОВКА:</h3>
               <select class="select-control">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Дешёвые</option>
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="sort">
-                <button class="low-high">
+                <button class="low-high low-to-high" type="button">
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_97_678)">
                     <path d="M15 10L20.5 20H9.5" fill="black"/>
@@ -168,7 +192,7 @@
                     </defs>
                     </svg>
                 </button>
-                <button class="low-high">
+                <button class="low-high high-to-low" type="button">
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_97_681)">
                   <path d="M15 20L9.5 10L20.5 10" fill="black"/>
@@ -180,8 +204,6 @@
                   </defs>
                   </svg>
                 </button>
-
-
               </div>
             </div>
             <ul class="product-list">
