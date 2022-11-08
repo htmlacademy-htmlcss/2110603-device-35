@@ -42,14 +42,20 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item header-catalog">
-            <button class="navigation-button">КАТАЛОГ ТОВАРОВ
-              <svg class="navigation-catalog-icon" aria-hidden="true" focusable="false" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2"/><g clip-path="url(#a)">
-                <path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/></g><defs><clipPath id="a">
-                <path fill="#fff" d="M17 17.79h16v16H17z"/></clipPath></defs>
-              </svg>
-            </button>
+            <div class="navigation-catalog-wrapper">
+              <a class="navigation-catalog navigation-link" href="#">КАТАЛОГ ТОВАРОВ<span class="navigation-catalog-icon"></span></a>
+              <ul class="navigation-subcatalog">
+  <!-- Активное состояние ссылки при добавлении класса "subcatalog-link-current" -->
+                <li class="navigation-subcatalog-item"><a class="subcatalog-link" href="#">Виртуальная реальность</a></li>
+                <li class="navigation-subcatalog-item"><a class="subcatalog-link" href="catalog.html">Моноподы для селфи</a></li>
+                <li class="navigation-subcatalog-item"><a class="subcatalog-link" href="#">Экшн-камеры</a></li>
+                <li class="navigation-subcatalog-item"><a class="subcatalog-link" href="#">Фитнес-браслеты</a></li>
+                <li class="navigation-subcatalog-item"><a class="subcatalog-link" href="#">Умные часы</a></li>
+                <li class="navigation-subcatalog-item"><a class="subcatalog-link" href="#">Квадрокоптеры</a></li>
+              </ul>
+            </div>
           </li>
+  <!-- Активное состояние ссылки при добавлении класса "navigation-link-current" -->
           <li class="navigation-item">
             <ul class="navigation-sublist">
               <li class="navigation-sublist-item" >
@@ -208,7 +214,7 @@
             </div>
             <ul class="product-list">
               <li class="product-card">
-                <a class="product-card-link new" href="#">
+                <a class="product-card-link" href="#">
                   <img class="product-card-image" src="images/files/product1.jpg" width="360" height="380"
                     alt="Любительская селфи-палка">
                   <div class="product-card-description">
