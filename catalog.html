@@ -32,10 +32,47 @@
             Сравнить</a>
           </li>
           <li class="user-list-item">
-            <a class="user-link basket-link" href="#">
+            <a class="user-link cart-link" href="#">
             Корзина
-            <span class="basket-content-icon">2</span>
-          </a>
+            <span class="cart-content-icon">2</span>
+            </a>
+
+            <div class="popover-cart popover-cart-close">
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="shopping-list">
+                  <li class="shopping-item">
+                    <a class="shopping-item-link" href="#">
+                      <img class="item-photo" src="images/files/product1.jpg" width="39" height="43">
+                      <span class="item-title">Любительская селфи-палка</span>
+                    </a>
+                    <button class="item-delete-button" type="button">
+                      <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить товар из корзины.</span>
+                    </button>
+                  </li>
+                  <li class="shopping-item">
+                    <a class="shopping-item-link" href="#">
+                      <img class="item-photo" src="images/files/product2.jpg" width="39" height="43">
+                      <span class="item-title">Профессиональная селфи-палка</span>
+                    </a>
+                    <button class="item-delete-button" type="button">
+                      <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить товар из корзины.</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-total">
+                  <p><span class="cart-total-name">Товаров:</span><span class="cart-total-value">2</span></p>
+                  <p><span class="cart-total-name">Сумма:</span><span class="cart-total-value">2000</span class="cart-total-currency"><span>₽</span></p>
+                </div>
+                <a class="button cart-link-button" href="#">Открыть корзину</a>
+              </div>
+            </div>
+            <main inert>
+            </main>
           </li>
         </ul>
       </div>
@@ -80,10 +117,10 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link" href="#">Каталог</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
+            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </header>

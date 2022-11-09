@@ -29,33 +29,35 @@
             Сравнить</a>
           </li>
           <li class="user-list-item popover-relative">
-            <a class="user-link basket-link" href="#">
+            <a class="user-link cart-link" href="#">
             Корзина
-              <span class="basket-content-icon">2</span>
+              <span class="cart-content-icon">2</span>
             </a>
 
-            <div class="popover-cart">
+            <div class="popover-cart popover-cart-close">
               <div class="popover-content">
                 <h2 class="visually-hidden">Корзина</h2>
-                <ul class="cart-items-list">
-                  <li class="cart-item">
-                    <a class="cart-item-link" href="#">
+                <ul class="shopping-list">
+                  <li class="shopping-item">
+                    <a class="shopping-item-link" href="#">
                       <img class="item-photo" src="images/files/product1.jpg" width="39" height="43">
                       <span class="item-title">Любительская селфи-палка</span>
                     </a>
                     <button class="item-delete-button" type="button">
-                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
+                      <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
                       </svg>
+                      <span class="visually-hidden">Удалить товар из корзины.</span>
                     </button>
                   </li>
-                  <li class="cart-item">
-                    <a class="cart-item-link" href="#">
+                  <li class="shopping-item">
+                    <a class="shopping-item-link" href="#">
                       <img class="item-photo" src="images/files/product2.jpg" width="39" height="43">
                       <span class="item-title">Профессиональная селфи-палка</span>
                     </a>
                     <button class="item-delete-button" type="button">
-                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
+                      <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
                       </svg>
+                      <span class="visually-hidden">Удалить товар из корзины.</span>
                     </button>
                   </li>
                 </ul>
@@ -63,10 +65,11 @@
                   <p><span class="cart-total-name">Товаров:</span><span class="cart-total-value">2</span></p>
                   <p><span class="cart-total-name">Сумма:</span><span class="cart-total-value">2000</span class="cart-total-currency"><span>₽</span></p>
                 </div>
-                <a class="button cart-link-button">Открыть корзину</a>
+                <a class="button cart-link-button" href="#">Открыть корзину</a>
               </div>
-
             </div>
+            <main inert>
+            </main>
           </li>
         </ul>
       </div>
@@ -214,7 +217,7 @@
               </div>
             </div>
             <div class="bestseller-slider-item">
-              <p class="title">Делай селфи,<br>
+              <p class="title">Делай селфи,
                  как Бен Стиллер!</p>
               <p class="item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
               </p>
