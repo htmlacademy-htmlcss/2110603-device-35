@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/favicon.ico">
   </head>
   <body>
     <header class="page-header">
@@ -77,7 +78,10 @@
         <ul class="navigation-list">
           <li class="navigation-item header-catalog">
             <div class="navigation-catalog-wrapper">
-              <a class="navigation-catalog navigation-link" href="#">КАТАЛОГ ТОВАРОВ<span class="navigation-catalog-icon"></span></a>
+              <a class="navigation-catalog navigation-link" href="#">
+                <p class="navigation-catalog-title">КАТАЛОГ ТОВАРОВ</p>
+                <span class="navigation-catalog-icon"></span>
+              </a>
               <ul class="navigation-subcatalog">
   <!-- Активное состояние ссылки при добавлении класса "subcatalog-link-current" -->
                 <li class="navigation-subcatalog-item"><a class="subcatalog-link" href="#">Виртуальная реальность</a></li>
@@ -267,7 +271,7 @@
          <li class="catalog-part">
            <a class="catalog-link" href="catalog.html">
              <img class="catalog-image" src="images/images/monopodes-catalog.svg" width="160" height="160">
-             <span>Моноподы для селфи</span>
+             <span>Моноподы для&nbsp;селфи</span>
            </a>
          </li>
          <li class="catalog-part">
@@ -311,7 +315,7 @@
             </li>
           </ul>
 <!-- Доставка. Для переключения заменить класс "service-item-current" на "service-item-disabled" -->
-          <div class="service-item-disabled delivery">
+          <div class="service-item-current delivery">
             <h3 class="title">Доставка</h3>
             <p class="service-item-description delivery-description">Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
@@ -327,7 +331,7 @@
             </p>
           </div>
 <!-- Кредит. Для переключения заменить класс "service-item-disabled" на "service-item-current"  -->
-          <div class="service-item-current credit">
+          <div class="service-item-disabled credit">
               <h3 class="title">Кредит</h3>
               <p class="service-item-description credit-description">Залезть в долговую яму стало проще!
        Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
