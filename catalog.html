@@ -10,115 +10,117 @@
 
   <body>
     <header class="page-header">
-      <div class="logo">
-        <a class="page-logo" href="#">
-          <img class="header-logo" src="images/images/logo.svg" width="145" height="36" alt="Логотип магазина Девайс">
-        </a>
-      </div>
-      <div class="header-user">
-        <ul class="header-user-list">
-          <li class="user-list-item">
-            <form class="searching">
-              <input class="header-search" type="search" placeholder="Поиск по сайту">
-              <input class="header-search-button" type="submit" value="Найти">
-            </form>
-          </li>
-          <li class="user-list-item">
-            <a class="user-link login-link" href="#">
-            <span class="login-id">Коля Петухов</span><span class="logout">Выйти</span></a>
-          </li>
-          <li class="user-list-item">
-            <a class="user-link compare-link" href="#">
-            Сравнить</a>
-          </li>
-          <li class="user-list-item popover-relative">
-            <a class="user-link cart-link" href="#">
-            Корзина
-            <span class="cart-content-icon">2</span>
-            </a>
-            <div class="popover-cart popover-cart-close">
-              <div class="popover-content">
-                <h2 class="visually-hidden">Корзина</h2>
-                <ul class="shopping-list">
-                  <li class="shopping-item">
-                    <a class="shopping-item-link" href="#">
-                      <img class="item-photo" src="images/files/product1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
-                      <span class="item-title">Любительская селфи-палка</span>
-                    </a>
-                    <button class="item-delete-button" type="button">
-                      <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
-                      </svg>
-                      <span class="visually-hidden">Удалить товар из корзины.</span>
-                    </button>
+      <div class="page-header-container">
+        <div class="logo">
+          <a class="page-logo" href="#">
+            <img class="header-logo" src="images/images/logo.svg" width="145" height="36" alt="Логотип магазина Девайс">
+          </a>
+        </div>
+        <div class="header-user">
+          <ul class="header-user-list">
+            <li class="user-list-item">
+              <form class="searching">
+                <input class="header-search" type="search" placeholder="Поиск по сайту">
+                <input class="header-search-button" type="submit" value="Найти">
+              </form>
+            </li>
+            <li class="user-list-item">
+              <a class="user-link login-link" href="#">
+              <span class="login-id">Коля Петухов</span><span class="logout">Выйти</span></a>
+            </li>
+            <li class="user-list-item">
+              <a class="user-link compare-link" href="#">
+              Сравнить</a>
+            </li>
+            <li class="user-list-item popover-relative">
+              <a class="user-link cart-link" href="#">
+              Корзина
+              <span class="cart-content-icon">2</span>
+              </a>
+              <div class="popover-cart popover-cart-close">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="shopping-list">
+                    <li class="shopping-item">
+                      <a class="shopping-item-link" href="#">
+                        <img class="item-photo" src="images/files/product1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+                        <span class="item-title">Любительская селфи-палка</span>
+                      </a>
+                      <button class="item-delete-button" type="button">
+                        <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
+                      </button>
+                    </li>
+                    <li class="shopping-item">
+                      <a class="shopping-item-link" href="#">
+                        <img class="item-photo" src="images/files/product2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+                        <span class="item-title">Профессиональная селфи-палка</span>
+                      </a>
+                      <button class="item-delete-button" type="button">
+                        <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-total">
+                    <p><span class="cart-total-name">Товаров:</span><span class="cart-total-value">2</span></p>
+                    <p><span class="cart-total-name">Сумма:</span><span class="cart-total-value">2000</span><span class="cart-total-currency">₽</span></p>
+                  </div>
+                  <a class="button cart-link-button" href="#">Открыть корзину</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item header-catalog">
+              <div class="navigation-catalog-wrapper">
+                <a class="navigation-catalog navigation-link" href="#">
+                  <p class="navigation-catalog-title">КАТАЛОГ ТОВАРОВ</p>
+                  <span class="navigation-catalog-icon"></span></a>
+                <ul class="navigation-subcatalog">
+    <!-- Активное состояние ссылки при добавлении класса "subcatalog-link-current" -->
+                  <li class="navigation-subcatalog-item">
+                    <a class="subcatalog-link" href="#">Виртуальная реальность</a>
                   </li>
-                  <li class="shopping-item">
-                    <a class="shopping-item-link" href="#">
-                      <img class="item-photo" src="images/files/product2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
-                      <span class="item-title">Профессиональная селфи-палка</span>
-                    </a>
-                    <button class="item-delete-button" type="button">
-                      <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff"/>
-                      </svg>
-                      <span class="visually-hidden">Удалить товар из корзины.</span>
-                    </button>
+                  <li class="navigation-subcatalog-item">
+                    <a class="subcatalog-link" href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="navigation-subcatalog-item">
+                    <a class="subcatalog-link" href="#">Экшн-камеры</a>
+                  </li>
+                  <li class="navigation-subcatalog-item">
+                    <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="navigation-subcatalog-item">
+                    <a class="subcatalog-link" href="#">Умные часы</a>
+                  </li>
+                  <li class="navigation-subcatalog-item">
+                    <a class="subcatalog-link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
-                <div class="cart-total">
-                  <p><span class="cart-total-name">Товаров:</span><span class="cart-total-value">2</span></p>
-                  <p><span class="cart-total-name">Сумма:</span><span class="cart-total-value">2000</span><span class="cart-total-currency">₽</span></p>
-                </div>
-                <a class="button cart-link-button" href="#">Открыть корзину</a>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item header-catalog">
-            <div class="navigation-catalog-wrapper">
-              <a class="navigation-catalog navigation-link" href="#">
-                <p class="navigation-catalog-title">КАТАЛОГ ТОВАРОВ</p>
-                <span class="navigation-catalog-icon"></span></a>
-              <ul class="navigation-subcatalog">
-  <!-- Активное состояние ссылки при добавлении класса "subcatalog-link-current" -->
-                <li class="navigation-subcatalog-item">
-                  <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+            </li>
+    <!-- Активное состояние ссылки при добавлении класса "navigation-link-current" -->
+            <li class="navigation-item">
+              <ul class="navigation-sublist">
+                <li class="navigation-sublist-item" >
+                  <a class="navigation-link" href="#">ДОСТАВКА</a>
                 </li>
-                <li class="navigation-subcatalog-item">
-                  <a class="subcatalog-link" href="catalog.html">Моноподы для селфи</a>
+                <li class="navigation-sublist-item">
+                  <a class="navigation-link" href="#">ГАРАНТИЯ</a>
                 </li>
-                <li class="navigation-subcatalog-item">
-                  <a class="subcatalog-link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="navigation-subcatalog-item">
-                  <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="navigation-subcatalog-item">
-                  <a class="subcatalog-link" href="#">Умные часы</a>
-                </li>
-                <li class="navigation-subcatalog-item">
-                  <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+                <li class="navigation-sublist-item">
+                  <a class="navigation-link" href="#">КОНТАКТЫ</a>
                 </li>
               </ul>
-            </div>
-          </li>
-  <!-- Активное состояние ссылки при добавлении класса "navigation-link-current" -->
-          <li class="navigation-item">
-            <ul class="navigation-sublist">
-              <li class="navigation-sublist-item" >
-                <a class="navigation-link" href="#">ДОСТАВКА</a>
-              </li>
-              <li class="navigation-sublist-item">
-                <a class="navigation-link" href="#">ГАРАНТИЯ</a>
-              </li>
-              <li class="navigation-sublist-item">
-                <a class="navigation-link" href="#">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-inner">
       <header class="inner-header">

@@ -60,20 +60,19 @@ body {
 
 /*  Header */
 
-.page-header {
+.page-header-container {
+  position: relative;
   width: 1160px;
-  margin: 15px auto 0;
+  top: -25px;
+
 }
 
-.page-header::after {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: auto;
+.page-header {
+  position: relative;
+  margin: 40px auto 0;
   width: 1160px;
-  height: 186px;
+  height: 100%;
   background-color: #ffe17f;
-  z-index: -3;
 }
 
 
@@ -515,6 +514,7 @@ body {
   border-radius: 50%;
   opacity: 30%;
   cursor: pointer;
+  z-index: 2;
 }
 
 .navigation-catalog-icon::before {
@@ -546,6 +546,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   width: 481px;
   justify-content: space-between;
 }
@@ -1930,6 +1931,7 @@ body {
 
 .modal-input-quantity {
   text-align: center;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
@@ -1945,6 +1947,7 @@ body {
 
 .modal-input-quantity::-webkit-outer-spin-button,
 .modal-input-quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -2378,11 +2381,13 @@ body {
   text-align: center;
   background-color: transparent;
   border: none;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
