@@ -1930,6 +1930,7 @@ body {
 
 .modal-input-quantity {
   text-align: center;
+  appearance: textfield;
 }
 
 .button-minus,
@@ -2285,7 +2286,6 @@ body {
 .range {
   padding-top: 10px;
   padding-bottom: 35px;
-
 }
 
 .range-scale {
