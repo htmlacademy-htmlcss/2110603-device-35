@@ -63,7 +63,7 @@ body {
 .page-header-container {
   position: relative;
   width: 1160px;
-  top: -25px;
+  margin-top: -25px;
 }
 
 .page-header {
@@ -151,7 +151,7 @@ body {
   background-position: 16px center;
 }
 
-.header-search:hover::placeholder {
+.header-search:hover:not(:disabled):placeholder {
   opacity: 60%;
 }
 
@@ -171,6 +171,8 @@ body {
 
 .header-search:disabled {
   opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
 .header-search-button {
@@ -184,7 +186,7 @@ body {
   cursor: pointer;
 }
 
-.header-search-button:hover {
+.header-search-button:hover:not(:disabled) {
   border: 2px solid #000000;
   background-color: #000000;
   color: #ffffff;
@@ -210,6 +212,8 @@ body {
 
 .header-search-button:disabled {
   opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
 .user-link:hover {
@@ -232,25 +236,30 @@ body {
   opacity: 30%;
 }
 
-.login-link {
+.header-login-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   min-width: 204px;
   max-width: 230px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 27px;
-  margin-right: 26px;
   background-color: #ffe17f;
   background-image: url("../images/images/login-icon.svg");
   background-size: 13px 12px;
   background-repeat: no-repeat;
-  background-position: center left 0;
+  background-position: top 6px left 3px;
+  padding-left: 27px;
+  margin-right: 26px;
+}
+
+.login-link,
+.logout-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
   cursor: pointer;
 }
 
-.logout {
+.logout-link {
   opacity: 30%;
 }
 
@@ -265,7 +274,7 @@ body {
   background-image: url("../images/images/compare-icon.svg");
   background-size: 10px 12px;
   background-repeat: no-repeat;
-  background-position: center left 0;
+  background-position: top 12px left 0;
   cursor: pointer;
 }
 
@@ -426,7 +435,7 @@ body {
   cursor: pointer;
 }
 
-.button.cart-link-button:hover {
+.button.cart-link-button:hover:not(:disabled) {
   background-color: #ffe17f;
 }
 
@@ -445,6 +454,12 @@ body {
 .button.cart-link-button:active {
   background-color: #ffe17f;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.button.cart-link-button:disabled {
+  opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
 .navigation {
@@ -710,7 +725,8 @@ body {
   position: relative;
   flex-wrap: wrap;
   width: 1160px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
+  padding-bottom: 40px;
   justify-content: space-between;
 }
 
@@ -772,7 +788,7 @@ body {
 }
 
 
-.slider-button:hover {
+.slider-button:hover:not(:disabled) {
   opacity: 60%;
 }
 
@@ -790,6 +806,11 @@ body {
   opacity: 30%;
 }
 
+.slider-button:disabled {
+  opacity: 10%;
+  outline: none;
+  cursor: default;
+}
 
 .slider-next {
   transform: rotate(180deg);
@@ -821,7 +842,7 @@ body {
 .bestseller-slider-item {
   color: #444444;
   position: relative;
-  top: 90px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   width: 560px;
@@ -871,7 +892,13 @@ body {
   text-align: center;
 }
 
-.button:hover {
+a.button.disabled {
+  opacity: 30%;
+  outline: none;
+  cursor: default;
+}
+
+.button:hover:not(:disabled):not([disabled]) {
   background-color: #ffe17f;
   background-image: none;
 }
@@ -886,9 +913,21 @@ body {
   }
 }
 
-.button:active {
+.button:active:not(:disabled):not([disabled]) {
   background-color: #ffcc33;
   background-image: none;
+}
+
+.button:disabled {
+  opacity: 30%;
+  outline: none;
+  cursor: default;
+}
+
+a.button[disabled] {
+  opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
 
@@ -899,7 +938,8 @@ body {
 
 .features-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
   gap: 15px;
 }
 
@@ -928,19 +968,17 @@ body {
   text-align: left;
 }
 
-
 .slider-pagination {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -38px;
   display: flex;
   flex-wrap: wrap;
   width: 76px;
   justify-content: space-between;
+  position: relative;
+  bottom: -8px;
+  left: -58px;
 }
 
 .slider-pagination-button {
@@ -1060,6 +1098,8 @@ body {
   display: grid;
   gap: 35px;
   width: 280px;
+  justify-items: start;
+  align-content: start;
 }
 
 .service-button {
@@ -1414,7 +1454,7 @@ body {
 }
 
 
-.subscription-input:hover {
+.subscription-input:hover:not(:disabled) {
   background-color: #dcdcdc;
 }
 
@@ -1434,6 +1474,11 @@ body {
   border-bottom: 3px solid #ff3d3d;
 }
 
+.subscription-input:disabled {
+  opacity: 30%;
+  outline: none;
+  cursor: default;
+}
 
 .subscription-button {
   padding: 15px 38px;
@@ -1451,7 +1496,7 @@ body {
 }
 
 
-.subscription-button:hover {
+.subscription-button:hover:not(:disabled) {
   border: none;
   background-color: #000000;
   color: #ffffff;
@@ -1480,6 +1525,7 @@ body {
   background-color: #f0f0f0;
   color: #000000;
   opacity: 30%;
+  cursor: default;
 }
 
 
@@ -2060,11 +2106,11 @@ body {
   background-color: transparent;
 }
 
-.modal-input:hover {
+.modal-input:hover:not(:disabled) {
   background-color: #dcdcdc;
 }
 
-.modal-button:hover {
+.modal-button:hover:not(:disabled) {
   background-color: #dcdcdc;
 }
 
@@ -2131,18 +2177,20 @@ body {
 
 .modal-input:disabled {
   opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
-.modal-input:focus:disabled {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
+.modal-button:disabled {
+  opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
 /*        Catalog Monopodes     */
 
-
 .inner-header {
-  margin: 40px auto 34px;
+  margin: 40px auto 30px;
   display: flex;
   flex-direction: column;
   width: 1040px;
@@ -2161,12 +2209,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   width: 1040px;
   justify-content: flex-start;
 }
 
 .breadcrumbs-item {
   padding-right: 36px;
+  padding-bottom: 4px;
   font-size: 16px;
   line-height: 20px;
   background-color: #ffffff;
@@ -2455,7 +2505,7 @@ body {
   border-radius: 50%;
 }
 
-.control:hover {
+.control:hover:not(:disabled) {
   opacity: 60%;
 }
 
@@ -2475,8 +2525,11 @@ body {
   opacity: 30%;
 }
 
-.control-input:disabled ~ .control-name {
+.control-input:disabled ~ .control-name,
+.control-input:checked:disabled ~ .control-name {
   opacity: 10%;
+  outline: none;
+  cursor: default;
 }
 
 
@@ -2678,7 +2731,7 @@ body {
   cursor: pointer;
 }
 
-.add-button:hover {
+.add-button:hover:not(:disabled) {
   border: 3px solid #000000;
 }
 
@@ -2701,6 +2754,8 @@ body {
 
 .add-button:disabled {
   opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
 
@@ -2763,12 +2818,14 @@ body {
   opacity: 60%;
 }
 
-.pagination-link.pagination-disabled {
+.pagination-link.disabled {
   color: #444444;
   opacity: 30%;
+  outline: none;
+  cursor: default;
 }
 
-.pagination-link:hover {
+.pagination-link:hover:not(.disabled) {
   opacity: 100%;
 }
 
@@ -2792,12 +2849,12 @@ body {
   }
 }
 
-.pagination-link:active {
+.pagination-link:active:not(.disabled) {
   opacity: 10%;
 }
 
-.pagination-prev:active,
-.pagination-next:active {
+.pagination-prev:active:not(.disabled),
+.pagination-next:active:not(.disabled) {
   color: rgba(0, 0, 0, 0.3);
   background-color: #dcdcdc;
 }
