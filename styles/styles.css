@@ -64,14 +64,12 @@ body {
   position: relative;
   width: 1160px;
   top: -25px;
-
 }
 
 .page-header {
   position: relative;
   margin: 40px auto 0;
   width: 1160px;
-  height: 100%;
   background-color: #ffe17f;
 }
 
